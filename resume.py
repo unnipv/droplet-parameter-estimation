@@ -29,7 +29,7 @@ model = model.to(device)
 optimizer = torch.optim.Adam(model.parameters(), lr = 1e-4)
 criterion = torch.nn.MSELoss()
 
-model = model.load_state_dict(torch.load(modelPath))
+model.load_state_dict(torch.load(modelPath))
 
 for epoch in range(start, EPOCHS+1):
     with tqdm(train_dataloader, unit="batch") as tepoch:
