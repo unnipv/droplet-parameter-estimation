@@ -56,5 +56,5 @@ for epoch in range(1, EPOCHS+1):
             lloss = criterion(target.float()*1400, outputs*1400)
             tepoch.set_postfix(mse = loss.item())
     if epoch%5 == 0:
-        tqdm.write("Saving Model" + str(itr) + ".torch")
-        torch.save(model.state_dict(), 'model//' + 'model' + str(epoch) + ".torch")
+        tqdm.write("Saving Model" + str(epoch) + ".torch")
+        torch.save(model.state_dict(), 'model/' + 'model' + str(epoch) + ".torch")
