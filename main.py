@@ -41,7 +41,7 @@ for epoch in range(1, EPOCHS+1):
             
             preds = model(data)
             outputs = torch.sigmoid(preds)
-            loss = criterion(preds, outputs)
+            loss = criterion(outputs, target)
             loss.backward()
             optimizer.step()
             tepoch.set_postfix(mse=loss.item())

@@ -25,27 +25,30 @@ model.load_state_dict(torch.load(modelPath)) # Load trained model
 model.eval() # Set net to evaluation mode, usually usefull in this case its fail
 
 #----------------Make preidction--------------------------------------------------------------------------
-# for data, target in test_dataloader:
-#     data, target = data.to(device), target.to(device)           
-#     preds = model(data)
-#     outputs = torch.sigmoid(preds)
-#     outputs = outputs * 1400
+for data, target in test_dataloader:
+    data, target = data.to(device), target.to(device)           
+    preds = model(data)
+    outputs = torch.sigmoid(preds)
+    outputs = outputs * 1400
 
-# print("Predictions //n")
-# print(outputs)
+print("Predictions")
+print(outputs)
+
+print("Labels")
+print(target * 1400)
 
 #individual image
-default_transforms = torchvision.transforms.Compose([
-    torchvision.transforms.ToTensor(),
-    torchvision.transforms.Grayscale(num_output_channels = 1),
-    torchvision.transforms.Normalize((0.5), (0.5)),
-    ]
-)
-img_path = sys.argv[2]
-image = Image.open(img_path)
-image = default_transforms(image).to(device)
-pred = model(image)
-print(torch.sigmoid(pred)*1400)
+# default_transforms = torchvision.transforms.Compose([
+#     torchvision.transforms.ToTensor(),
+#     torchvision.transforms.Grayscale(num_output_channels = 1),
+#     torchvision.transforms.Normalize((0.5), (0.5)),
+#     ]
+# )
+# img_path = sys.argv[2]
+# image = Image.open(img_path)
+# image = default_transforms(image).to(device)
+# pred = model(image)
+# print(torch.sigmoid(pred)*1400)
 
 
 
