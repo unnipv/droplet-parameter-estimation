@@ -39,10 +39,9 @@ for epoch in range(1, EPOCHS+1):
             tepoch.set_description(f"Epoch {epoch}")
             data, target = data.to(device), target.to(device)
             optimizer.zero_grad()
-            
-            preds = model(data)
+            preds = model(data).squeeze()
             outputs = torch.sigmoid(preds)
-            loss = criterion(target.float()*1400, outputs*1400)
+            loss = criterion(target.float(), outputs)
             loss.backward()
             optimizer.step()
             tepoch.set_postfix(mse=loss.item())
