@@ -51,9 +51,9 @@ for epoch in range(1, EPOCHS+1):
             tepoch.set_description(f"Validation {epoch}")
             data, target = data.to(device), target.to(device)
            
-            preds = model(data)
+            preds = model(data).squeeze()
             outputs = torch.sigmoid(preds)
-            lloss = criterion(target.float()*1400, outputs*1400)
+            lloss = criterion(target.float(), outputs)
             tepoch.set_postfix(mse = loss.item())
     if epoch%5 == 0:
         tqdm.write("Saving Model" + str(epoch) + ".torch")
