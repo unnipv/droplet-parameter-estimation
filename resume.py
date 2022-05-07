@@ -23,7 +23,7 @@ valid_dataloader = DataLoader(valid_dataset, batch_size=64, shuffle=True)
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-mode = UnniNet()
+model = UnniNet()
 model = model.load_state_dict(torch.load(modelPath))
 model = model.to(device)
 
