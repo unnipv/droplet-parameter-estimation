@@ -38,6 +38,7 @@ print("Labels")
 print(str(20 + target * 1380))
 print("MSE")
 print(criterion(target.float(), outputs).item())
+print(criterion((20 + outputs * 1380),(20 + target * 1380)))
 #individual image
 # default_transforms = torchvision.transforms.Compose([
 #     torchvision.transforms.ToTensor(),
