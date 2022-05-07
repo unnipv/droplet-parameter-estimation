@@ -27,7 +27,7 @@ model.eval() # Set net to evaluation mode, usually usefull in this case its fail
 #----------------Make preidction--------------------------------------------------------------------------
 for data, target in test_dataloader:
     data, target = data.to(device), target.to(device)           
-    preds = model(data)
+    preds = model(data).squeeze()
     outputs = torch.sigmoid(preds)
     outputs = outputs * 1400
 
