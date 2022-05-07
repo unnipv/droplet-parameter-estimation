@@ -13,10 +13,11 @@ default_transforms = torchvision.transforms.Compose([
 )
 
 class ScaleStuff(object):
-    def __init__(self, max = 1400):
+    def __init__(self, max = 1400, min = 20):
         self.max = 1400
+        self.min = 20
     def __call__(self, item):
-        return float(item)/self.max
+        return float(item - self.min)/(self.max - self.min)
 
 default_target_transform = ScaleStuff()
 

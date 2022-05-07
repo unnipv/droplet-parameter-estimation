@@ -29,14 +29,14 @@ for data, target in test_dataloader:
     data, target = data.to(device), target.to(device)           
     preds = model(data).squeeze()
     outputs = torch.sigmoid(preds)
-    outputs = outputs * 1400
 
 criterion = torch.nn.MSELoss()
 print("Predictions")
-print(outputs)
+print(str(20 + outputs * 1380))
 
 print("Labels")
-print(target * 1400)
+print(str(20 + target * 1380))
+print("MSE")
 print(criterion(target.float(), outputs).item())
 #individual image
 # default_transforms = torchvision.transforms.Compose([

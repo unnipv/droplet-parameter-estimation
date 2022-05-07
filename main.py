@@ -53,7 +53,7 @@ for epoch in range(1, EPOCHS+1):
            
             preds = model(data).squeeze()
             outputs = torch.sigmoid(preds)
-            lloss = criterion(target.float(), outputs)
+            loss = criterion(target.float(), outputs)
             tepoch.set_postfix(mse = loss.item())
     if epoch%5 == 0:
         tqdm.write("Saving Model" + str(epoch) + ".torch")
