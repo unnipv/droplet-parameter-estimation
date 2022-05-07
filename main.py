@@ -3,8 +3,9 @@ from torch.utils.data import DataLoader
 from model.Unninet import UnniNet
 from tqdm import tqdm
 import torch
+import sys
 
-EPOCHS = 5
+EPOCHS = int(sys.argv[1])
 
 ROOT_DIR = "data/m_crop"
 TRAIN_CSV = "data/m_crop/train.csv"
