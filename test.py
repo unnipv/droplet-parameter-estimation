@@ -43,7 +43,7 @@ default_transforms = torchvision.transforms.Compose([
 )
 img_path = sys.argv[2]
 image = Image.open(img_path)
-image = default_transforms(image)
+image = default_transforms(image).to(device)
 pred = model(image)
 print(torch.sigmoid(pred)*1400)
 
