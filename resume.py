@@ -10,7 +10,7 @@ TRAIN_CSV = "data/m_crop/train.csv"
 TEST_CSV = "data/m_crop/test.csv"
 VALID_CSV = "data/m_crop/valid.csv"
 modelPath = "model/" + sys.argv[1]
-start = int(modelPath.split(".")[5:])
+start = int(modelPath.split(".")[0][5:])
 EPOCHS = start + int(sys.argv[2])
 
 train_dataset = DropletDataset(root_dir = ROOT_DIR, annotations_path = TRAIN_CSV)
