@@ -24,8 +24,9 @@ valid_dataloader = DataLoader(valid_dataset, batch_size=64, shuffle=True)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = UnniNet()
-model = model.load_state_dict(torch.load(modelPath))
 model = model.to(device)
+model = model.load_state_dict(torch.load(modelPath))
+
 
 
 optimizer = torch.optim.Adam(model.parameters(), lr = 1e-4)
