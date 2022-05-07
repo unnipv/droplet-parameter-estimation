@@ -32,7 +32,6 @@ optimizer = torch.optim.Adam(model.parameters(), lr = 1e-4)
 criterion = torch.nn.MSELoss()
 
 
-
 for epoch in range(1, EPOCHS+1):
     with tqdm(train_dataloader, unit="batch") as tepoch:
         for data, target in tepoch:

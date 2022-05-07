@@ -25,14 +25,11 @@ valid_dataloader = DataLoader(valid_dataset, batch_size=64, shuffle=True)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = UnniNet()
 model = model.to(device)
-model = model.load_state_dict(torch.load(modelPath))
-
-
 
 optimizer = torch.optim.Adam(model.parameters(), lr = 1e-4)
 criterion = torch.nn.MSELoss()
 
-
+model = model.load_state_dict(torch.load(modelPath))
 
 for epoch in range(start, EPOCHS+1):
     with tqdm(train_dataloader, unit="batch") as tepoch:
