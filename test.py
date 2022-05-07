@@ -31,12 +31,13 @@ for data, target in test_dataloader:
     outputs = torch.sigmoid(preds)
     outputs = outputs * 1400
 
+criterion = torch.nn.MSELoss()
 print("Predictions")
 print(outputs)
 
 print("Labels")
 print(target * 1400)
-
+print(criterion(target.float(), outputs).item())
 #individual image
 # default_transforms = torchvision.transforms.Compose([
 #     torchvision.transforms.ToTensor(),
