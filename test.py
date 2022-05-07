@@ -9,7 +9,7 @@ import os
 
 ROOT_DIR = "data/m_crop"
 TEST_CSV = "data/m_crop/test.csv"
-modelPath = "models//" + sys.argv[1]
+modelPath = "model/" + sys.argv[1]
 
 #--------------Loading Test Data--------------------------------------------------------------------#
 test_dataset = DropletDataset(root_dir = ROOT_DIR, annotations_path = TEST_CSV)
