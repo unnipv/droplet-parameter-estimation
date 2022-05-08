@@ -21,7 +21,7 @@ model = UnniNet()
 model = model.to(device)
 
 #----------------Load State--------------------------------------------------------------------------
-model.load_state_dict(torch.load(modelPath)) # Load trained model
+model.load_state_dict(torch.load(modelPath, map_location= device)) # Load trained model
 model.eval() # Set net to evaluation mode, usually usefull in this case its fail
 
 #----------------Make preidction--------------------------------------------------------------------------
