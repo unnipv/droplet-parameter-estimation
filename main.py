@@ -55,6 +55,6 @@ for epoch in range(1, EPOCHS+1):
             outputs = torch.sigmoid(preds)
             loss = criterion(target.float(), outputs)
             tepoch.set_postfix(mse = loss.item())
-    if epoch%5 == 0:
+    if epoch%10 == 0:
         tqdm.write("Saving model_" + sys.argv[2] + str(epoch) + ".torch")
         torch.save(model.state_dict(), train_folder + 'model' + str(epoch) + ".torch")
