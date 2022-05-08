@@ -4,9 +4,11 @@ from model.Unninet import UnniNet
 from tqdm import tqdm
 import torch
 import sys
+import os
 
 EPOCHS = int(sys.argv[1])
-train_folder = "model/train_" + sys.argv[2] + "//"
+train_folder = "model/train_" + sys.argv[2] + "/"
+os.mkdir(train_folder)
 
 ROOT_DIR = "data/m_crop"
 TRAIN_CSV = "data/m_crop/train.csv"
