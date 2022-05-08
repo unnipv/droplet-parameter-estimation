@@ -6,6 +6,7 @@ import torch
 import sys
 
 EPOCHS = int(sys.argv[1])
+train_folder = "model/train_" + sys.argv[2] + "//"
 
 ROOT_DIR = "data/m_crop"
 TRAIN_CSV = "data/m_crop/train.csv"
@@ -55,5 +56,5 @@ for epoch in range(1, EPOCHS+1):
             loss = criterion(target.float(), outputs)
             tepoch.set_postfix(mse = loss.item())
     if epoch%5 == 0:
-        tqdm.write("Saving Model" + str(epoch) + ".torch")
-        torch.save(model.state_dict(), 'model/' + 'model' + str(epoch) + ".torch")
+        tqdm.write("Saving model_" + sys.argv[2] + str(epoch) + ".torch")
+        torch.save(model.state_dict(), train_folder + 'model' + str(epoch) + ".torch")
