@@ -7,13 +7,13 @@ import sys
 import os
 
 EPOCHS = int(sys.argv[1])
-train_folder = "model/train_" + sys.argv[2] + "/"
+train_folder = "model\train_" + sys.argv[2] + "\\"
 os.mkdir(train_folder)
 
-ROOT_DIR = "data/m_crop"
-TRAIN_CSV = "data/m_crop/train.csv"
-TEST_CSV = "data/m_crop/test.csv"
-VALID_CSV = "data/m_crop/valid.csv"
+ROOT_DIR = "data\m_crop"
+TRAIN_CSV = "data\m_crop\train.csv"
+TEST_CSV = "data\m_crop\test.csv"
+VALID_CSV = "data\m_crop\valid.csv"
 
 
 train_dataset = DropletDataset(root_dir = ROOT_DIR, annotations_path = TRAIN_CSV)
