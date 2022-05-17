@@ -5,15 +5,22 @@ from tqdm import tqdm
 import torch
 import sys
 import os
+import wandb
+from pathlib import Path
 
+wandb.init(project="ddp-training", entity="unnikrishnan")
 EPOCHS = int(sys.argv[1])
-train_folder = "model\train_" + sys.argv[2] + "\\"
-os.mkdir(train_folder)
+directory = "train_" + sys.argv[2]
+parent_dir = "model"
+train_folder_path = os.path.join(parent_dir, directory)
+print(os.getcwd())
+print(os.listdir(os.getcwd()))
+os.mkdir(train_folder_path)
 
 ROOT_DIR = "data\m_crop"
-TRAIN_CSV = "data\m_crop\train.csv"
-TEST_CSV = "data\m_crop\test.csv"
-VALID_CSV = "data\m_crop\valid.csv"
+TRAIN_CSV = os.path.join(ROOT_DIR, "train.csv")
+TEST_CSV = os.path.join(ROOT_DIR, "test.csv")
+VALID_CSV = os.path.join(ROOT_DIR, "valid.csv")
 
 
 train_dataset = DropletDataset(root_dir = ROOT_DIR, annotations_path = TRAIN_CSV)
@@ -34,6 +41,11 @@ model = model.to(device)
 optimizer = torch.optim.Adam(model.parameters(), lr = 1e-4)
 criterion = torch.nn.MSELoss()
 
+wandb.config = {
+  "learning_rate": 0.0001,
+  "epochs": EPOCHS,
+  "batch_size": 64
+}
 
 for epoch in range(1, EPOCHS+1):
     with tqdm(train_dataloader, unit="batch") as tepoch:
@@ -46,6 +58,7 @@ for epoch in range(1, EPOCHS+1):
             loss = criterion(target.float(), outputs)
             loss.backward()
             optimizer.step()
+            wandb.log({"loss": loss})
             tepoch.set_postfix(mse=loss.item())
     
     with tqdm(valid_dataloader, unit="batch") as tepoch:
@@ -56,7 +69,8 @@ for epoch in range(1, EPOCHS+1):
             preds = model(data).squeeze()
             outputs = torch.sigmoid(preds)
             loss = criterion(target.float(), outputs)
+            wandb.log({"validation_loss": loss})
             tepoch.set_postfix(mse = loss.item())
-    if epoch%10 == 0:
+    if epoch%50 == 0:
         tqdm.write("Saving model_" + sys.argv[2] + str(epoch) + ".torch")
-        torch.save(model.state_dict(), train_folder + 'model' + str(epoch) + ".torch")
+        torch.save(model.state_dict(), os.path.join(train_folder_path, 'model' + str(epoch) + ".torch"))
