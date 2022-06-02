@@ -1,8 +1,8 @@
 import pandas as pd
-path = "data/m_crop/labels.csv"
-test_path = "data/m_crop/test.csv"
-train_path = "data/m_crop/train.csv"
-valid_path = "data/m_crop/valid.csv"
+path = r"data\crop\labels.csv"
+test_path = r"data\crop\test.csv"
+train_path = r"data\crop\train.csv"
+valid_path = r"data\crop\valid.csv"
 
 df = pd.read_csv(path)
 df = df.sample(frac = 1)

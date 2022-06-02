@@ -1,6 +1,7 @@
 from dataset.droplets import DropletDataset
 from torch.utils.data import DataLoader
 from model.Unninet import UnniNet
+from model.Soorkinet import SoorkiNet
 import torch
 import torchvision
 from PIL import Image
@@ -25,34 +26,34 @@ model.load_state_dict(torch.load(modelPath, map_location= device)) # Load traine
 model.eval() # Set net to evaluation mode, usually usefull in this case its fail
 
 #----------------Make preidction--------------------------------------------------------------------------
-# for data, target in test_dataloader:
-#     data, target = data.to(device), target.to(device)           
-#     preds = model(data).squeeze()
-#     outputs = torch.sigmoid(preds)
+for data, target in test_dataloader:
+    data, target = data.to(device), target.to(device)           
+    preds = model(data).squeeze()
+    outputs = torch.sigmoid(preds)
 
-# criterion = torch.nn.MSELoss()
-# print("Predictions")
-# print(str(20 + outputs * 1380))
+criterion = torch.nn.MSELoss()
+print("Predictions")
+print(str(20 + outputs * 1380))
 
-# print("Labels")
-# print(str(20 + target * 1380))
-# print("MSE")
-# print(criterion(target.float(), outputs).item())
-# print(criterion((20 + outputs * 1380),(20 + target * 1380)))
+print("Labels")
+print(str(20 + target * 1380))
+print("MSE")
+print(criterion(target.float(), outputs).item())
+print(criterion((20 + outputs * 1380),(20 + target * 1380)))
 #individual image
-default_transforms = torchvision.transforms.Compose([
-    torchvision.transforms.ToTensor(),
-    torchvision.transforms.Grayscale(num_output_channels = 1),
-    torchvision.transforms.Normalize((0.5), (0.5)),
-    ]
-)
-img_path = sys.argv[2]
-image = Image.open(img_path)
-image = default_transforms(image).unsqueeze(0).to(device)
-print(image.size())
-pred = model(image)
-out = 20 + torch.sigmoid(pred) * 1380
-print(out)
+# default_transforms = torchvision.transforms.Compose([
+#     torchvision.transforms.ToTensor(),
+#     torchvision.transforms.Grayscale(num_output_channels = 1),
+#     torchvision.transforms.Normalize((0.5), (0.5)),
+#     ]
+# )
+# img_path = sys.argv[2]
+# image = Image.open(img_path)
+# image = default_transforms(image).unsqueeze(0).to(device)
+# print(image.size())
+# pred = model(image)
+# out = 20 + torch.sigmoid(pred) * 1380
+# print(out)
 
 
 
