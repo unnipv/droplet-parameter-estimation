@@ -51,4 +51,3 @@ class DropletDataset(Dataset):
             label = self.target_transform(label)
         
         return image, label
-
