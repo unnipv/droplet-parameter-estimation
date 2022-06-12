@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "main_windows.py", line 13, in <module>
+    directory = "train_" + sys.argv[2]
+IndexError: list index out of range

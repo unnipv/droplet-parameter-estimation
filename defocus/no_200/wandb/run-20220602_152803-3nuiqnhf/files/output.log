@@ -1,0 +1,6 @@
+E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined
+['data', 'dataset', 'main_windows.py', 'model', 'resume.py', 'test_windows_mp.py', 'wandb']
+Traceback (most recent call last):
+  File "main_windows.py", line 18, in <module>
+    os.mkdir(train_folder_path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: 'model\\train_combined_1'

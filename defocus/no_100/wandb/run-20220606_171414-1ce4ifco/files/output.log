@@ -1,0 +1,8 @@
+E:\Academics\DDP\Code\CNN\droplet-parameter-estimation\defocus\no_100
+['data', 'dataset', 'data_100', 'main.py', 'model', 'resume.py', 'test.py', 'wandb']
+
+Epoch 1:   0%|                                                                                                                     | 0/264 [00:09<?, ?batch/s]
+Traceback (most recent call last):
+  File "main.py", line 65, in <module>
+    train_loss.append(loss.item())
+AttributeError: 'numpy.ndarray' object has no attribute 'append'

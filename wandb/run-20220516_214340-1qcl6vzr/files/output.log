@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "main_windows.py", line 13, in <module>
-    os.mkdir(train_folder)
-OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'model\train_wandb1'

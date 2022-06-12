@@ -1,0 +1,6 @@
+E:\Academics\DDP\Code\Soorkie\droplet-parameter-estimation
+<generator object walk at 0x0000022FB36C5740>
+Traceback (most recent call last):
+  File "main_windows.py", line 17, in <module>
+    os.mkdir(train_folder_path)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: '\\model\\train_wandb1'

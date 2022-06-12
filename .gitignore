@@ -1,1 +1,12 @@
-Combined/data/
+defocus/50_100_150/data/*.png
+defocus/100/data/*.png
+defocus/no_200/data/*.png
+defocus/no_200/OtherData/Dataset_200/*.png
+defocus/no_100/data_100/*.png
+defocus/no_100/data/*
+defocus/all_classes/data/*.png
+infocus/all/data/*.png
+infocus/no_200/data/*.png
+infocus/no_100/data/*.png
+infocus/no_200/200/*.png
+infocus/no_100/100/*.png

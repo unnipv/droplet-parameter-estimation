@@ -1,0 +1,27 @@
+{
+    "os": "Windows-10-10.0.25120-SP0",
+    "python": "3.8.3",
+    "heartbeatAt": "2022-06-06T21:15:41.867030",
+    "startedAt": "2022-06-06T21:15:33.124047",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1650",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "20",
+        "no_100_1"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "infocus\\no_100\\main.py",
+    "git": {
+        "remote": "https://github.com/unnipv/droplet-parameter-estimation.git",
+        "commit": "3816e878d759e1eb776541d09a5b0afaff9eafa0"
+    },
+    "email": "unnimonpv@gmail.com",
+    "root": "E:/Academics/DDP/Code/CNN/droplet-parameter-estimation",
+    "host": "cosmopense",
+    "username": "unnikrishnan",
+    "executable": "C:\\ProgramData\\Anaconda3\\python.exe"
+}

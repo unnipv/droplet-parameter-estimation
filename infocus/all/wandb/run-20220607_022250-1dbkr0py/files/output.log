@@ -1,0 +1,37 @@
+
+  0%|                                                                                                                               | 0/32 [00:00<?, ?batch/s]
+E:\Academics\DDP\Code\CNN\droplet-parameter-estimation\infocus\all
+
+Epoch 1:   0%|                                                                                                                      | 0/32 [00:00<?, ?batch/s]C:\ProgramData\Anaconda3\lib\site-packages\torch\nn\modules\loss.py:529: UserWarning: Using a target size (torch.Size([32])) that is different to the input size (torch.Size([32, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1:  78%|█████████████████████████████████████████████████████████████████▋                  | 25/32 [00:35<00:09,  1.41s/batch, avg_mse=inf, mse=0.0923]
+Traceback (most recent call last):
+  File "main.py", line 56, in <module>
+    for data, target in tepoch:
+  File "C:\ProgramData\Anaconda3\lib\site-packages\tqdm\std.py", line 1129, in __iter__
+    for obj in iterable:
+  File "C:\ProgramData\Anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\ProgramData\Anaconda3\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\ProgramData\Anaconda3\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "E:\Academics\DDP\Code\CNN\droplet-parameter-estimation\infocus\all\dataset\droplets.py", line 45, in __getitem__
+    image = Image.open(img_path)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py", line 2878, in open
+    fp = builtins.open(filename, "rb")
+KeyboardInterrupt

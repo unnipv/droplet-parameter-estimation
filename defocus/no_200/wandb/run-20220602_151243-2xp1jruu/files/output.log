@@ -1,0 +1,18 @@
+E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined
+['data', 'dataset', 'main_windows.py', 'model', 'resume.py', 'test_windows_mp.py', 'wandb']
+Traceback (most recent call last):
+  File "main_windows.py", line 36, in <module>
+    img, label = next(iter(train_dataloader))
+  File "C:\ProgramData\Anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\ProgramData\Anaconda3\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\ProgramData\Anaconda3\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\dataset\droplets.py", line 51, in __getitem__
+    label = self.target_transform(label)
+  File "E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\dataset\droplets.py", line 27, in __call__
+    dia_normalized = float(item[0] - self.min_dia)/(self.max_dia - self.min_dia)
+AttributeError: 'ScaleStuff' object has no attribute 'min_dia'

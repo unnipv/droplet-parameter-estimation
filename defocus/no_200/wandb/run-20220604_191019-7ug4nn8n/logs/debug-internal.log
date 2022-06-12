@@ -1,0 +1,156 @@
+2022-06-04 19:10:21,780 INFO    MainThread:30940 [internal.py:wandb_internal():90] W&B internal server running at pid: 30940, started at: 2022-06-04 19:10:21.780766
+2022-06-04 19:10:21,780 INFO    WriterThread:30940 [datastore.py:open_for_write():75] open: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\run-7ug4nn8n.wandb
+2022-06-04 19:10:21,791 DEBUG   SenderThread:30940 [sender.py:send():232] send: header
+2022-06-04 19:10:21,791 DEBUG   SenderThread:30940 [sender.py:send():232] send: run
+2022-06-04 19:10:22,120 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: check_version
+2022-06-04 19:10:22,125 INFO    SenderThread:30940 [dir_watcher.py:__init__():197] watching files in: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files
+2022-06-04 19:10:22,125 INFO    SenderThread:30940 [sender.py:_start_run_threads():811] run started: 7ug4nn8n with start time 1654350020
+2022-06-04 19:10:22,125 DEBUG   SenderThread:30940 [sender.py:send():232] send: summary
+2022-06-04 19:10:22,130 INFO    SenderThread:30940 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-04 19:10:22,130 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: check_version
+2022-06-04 19:10:22,231 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: run_start
+2022-06-04 19:10:23,155 INFO    Thread-11 :30940 [dir_watcher.py:_on_file_created():244] file/dir created: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\wandb-summary.json
+2022-06-04 19:10:27,840 DEBUG   HandlerThread:30940 [meta.py:__init__():35] meta init
+2022-06-04 19:10:27,840 DEBUG   HandlerThread:30940 [meta.py:__init__():49] meta init done
+2022-06-04 19:10:27,840 DEBUG   HandlerThread:30940 [meta.py:probe():209] probe
+2022-06-04 19:10:27,900 DEBUG   HandlerThread:30940 [meta.py:_setup_git():199] setup git
+2022-06-04 19:10:28,095 DEBUG   HandlerThread:30940 [meta.py:_setup_git():206] setup git done
+2022-06-04 19:10:28,095 DEBUG   HandlerThread:30940 [meta.py:_save_pip():53] save pip
+2022-06-04 19:10:28,111 DEBUG   HandlerThread:30940 [meta.py:_save_pip():67] save pip done
+2022-06-04 19:10:28,111 DEBUG   HandlerThread:30940 [meta.py:_save_conda():74] save conda
+2022-06-04 19:10:28,185 INFO    Thread-11 :30940 [dir_watcher.py:_on_file_created():244] file/dir created: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\output.log
+2022-06-04 19:10:28,185 INFO    Thread-11 :30940 [dir_watcher.py:_on_file_created():244] file/dir created: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\requirements.txt
+2022-06-04 19:10:28,185 INFO    Thread-11 :30940 [dir_watcher.py:_on_file_created():244] file/dir created: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\conda-environment.yaml
+2022-06-04 19:10:29,196 INFO    Thread-11 :30940 [dir_watcher.py:_on_file_modified():257] file/dir modified: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\output.log
+2022-06-04 19:10:40,040 DEBUG   HandlerThread:30940 [meta.py:_save_conda():84] save conda done
+2022-06-04 19:10:40,040 DEBUG   HandlerThread:30940 [meta.py:probe():247] probe done
+2022-06-04 19:10:40,045 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:10:40,045 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:10:40,045 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:10:40,045 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:10:40,045 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:10:40,282 INFO    Thread-11 :30940 [dir_watcher.py:_on_file_modified():257] file/dir modified: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\conda-environment.yaml
+2022-06-04 19:10:40,283 INFO    Thread-11 :30940 [dir_watcher.py:_on_file_created():244] file/dir created: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\wandb-metadata.json
+2022-06-04 19:10:40,345 DEBUG   SenderThread:30940 [sender.py:send():232] send: telemetry
+2022-06-04 19:10:40,345 DEBUG   SenderThread:30940 [sender.py:send():232] send: telemetry
+2022-06-04 19:10:40,345 DEBUG   SenderThread:30940 [sender.py:send():232] send: exit
+2022-06-04 19:10:40,345 INFO    SenderThread:30940 [sender.py:send_exit():368] handling exit code: 1
+2022-06-04 19:10:40,346 INFO    SenderThread:30940 [sender.py:send_exit():370] handling runtime: 17
+2022-06-04 19:10:40,347 INFO    SenderThread:30940 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-04 19:10:40,347 INFO    SenderThread:30940 [sender.py:send_exit():376] send defer
+2022-06-04 19:10:40,347 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:10:40,348 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:10:40,348 INFO    HandlerThread:30940 [handler.py:handle_request_defer():164] handle defer: 0
+2022-06-04 19:10:40,348 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:10:40,348 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:10:40,349 DEBUG   SenderThread:30940 [sender.py:send():232] send: files
+2022-06-04 19:10:40,349 INFO    SenderThread:30940 [sender.py:_save_file():948] saving file wandb-metadata.json with policy now
+2022-06-04 19:10:40,349 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:10:40,349 INFO    SenderThread:30940 [sender.py:send_request_defer():385] handle sender defer: 0
+2022-06-04 19:10:40,349 INFO    SenderThread:30940 [sender.py:transition_state():389] send defer: 1
+2022-06-04 19:10:40,349 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:10:40,350 INFO    HandlerThread:30940 [handler.py:handle_request_defer():164] handle defer: 1
+2022-06-04 19:10:40,397 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:10:40,398 INFO    SenderThread:30940 [sender.py:send_request_defer():385] handle sender defer: 1
+2022-06-04 19:10:40,398 INFO    SenderThread:30940 [sender.py:transition_state():389] send defer: 2
+2022-06-04 19:10:40,398 DEBUG   SenderThread:30940 [sender.py:send():232] send: stats
+2022-06-04 19:10:40,399 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:10:40,399 INFO    HandlerThread:30940 [handler.py:handle_request_defer():164] handle defer: 2
+2022-06-04 19:10:40,399 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:10:40,399 INFO    SenderThread:30940 [sender.py:send_request_defer():385] handle sender defer: 2
+2022-06-04 19:10:40,399 INFO    SenderThread:30940 [sender.py:transition_state():389] send defer: 3
+2022-06-04 19:10:40,400 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:10:40,400 INFO    HandlerThread:30940 [handler.py:handle_request_defer():164] handle defer: 3
+2022-06-04 19:10:40,400 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:10:40,400 INFO    SenderThread:30940 [sender.py:send_request_defer():385] handle sender defer: 3
+2022-06-04 19:10:40,400 INFO    SenderThread:30940 [sender.py:transition_state():389] send defer: 4
+2022-06-04 19:10:40,401 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:10:40,401 INFO    HandlerThread:30940 [handler.py:handle_request_defer():164] handle defer: 4
+2022-06-04 19:10:40,401 DEBUG   SenderThread:30940 [sender.py:send():232] send: summary
+2022-06-04 19:10:40,402 INFO    SenderThread:30940 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-04 19:10:40,402 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:10:40,402 INFO    SenderThread:30940 [sender.py:send_request_defer():385] handle sender defer: 4
+2022-06-04 19:10:40,402 INFO    SenderThread:30940 [sender.py:transition_state():389] send defer: 5
+2022-06-04 19:10:40,403 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:10:40,403 INFO    HandlerThread:30940 [handler.py:handle_request_defer():164] handle defer: 5
+2022-06-04 19:10:40,403 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:10:40,403 INFO    SenderThread:30940 [sender.py:send_request_defer():385] handle sender defer: 5
+2022-06-04 19:10:40,453 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:10:40,726 INFO    SenderThread:30940 [sender.py:transition_state():389] send defer: 6
+2022-06-04 19:10:40,726 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:10:40,727 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:10:40,727 INFO    HandlerThread:30940 [handler.py:handle_request_defer():164] handle defer: 6
+2022-06-04 19:10:40,727 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:10:40,727 INFO    SenderThread:30940 [sender.py:send_request_defer():385] handle sender defer: 6
+2022-06-04 19:10:40,727 INFO    SenderThread:30940 [dir_watcher.py:finish():312] shutting down directory watcher
+2022-06-04 19:10:40,835 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:10:41,294 INFO    SenderThread:30940 [dir_watcher.py:_on_file_modified():257] file/dir modified: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\config.yaml
+2022-06-04 19:10:41,295 INFO    SenderThread:30940 [dir_watcher.py:_on_file_modified():257] file/dir modified: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\wandb-summary.json
+2022-06-04 19:10:41,295 INFO    SenderThread:30940 [dir_watcher.py:finish():342] scan: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files
+2022-06-04 19:10:41,296 INFO    SenderThread:30940 [dir_watcher.py:finish():356] scan save: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\conda-environment.yaml conda-environment.yaml
+2022-06-04 19:10:41,296 INFO    SenderThread:30940 [dir_watcher.py:finish():356] scan save: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\config.yaml config.yaml
+2022-06-04 19:10:41,296 INFO    SenderThread:30940 [dir_watcher.py:finish():356] scan save: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\output.log output.log
+2022-06-04 19:10:41,297 INFO    SenderThread:30940 [dir_watcher.py:finish():356] scan save: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\requirements.txt requirements.txt
+2022-06-04 19:10:41,301 INFO    SenderThread:30940 [dir_watcher.py:finish():356] scan save: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\wandb-metadata.json wandb-metadata.json
+2022-06-04 19:10:41,301 INFO    SenderThread:30940 [dir_watcher.py:finish():356] scan save: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\wandb-summary.json wandb-summary.json
+2022-06-04 19:10:41,311 INFO    SenderThread:30940 [sender.py:transition_state():389] send defer: 7
+2022-06-04 19:10:41,311 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:10:41,311 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:10:41,311 INFO    HandlerThread:30940 [handler.py:handle_request_defer():164] handle defer: 7
+2022-06-04 19:10:41,311 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:10:41,311 INFO    SenderThread:30940 [sender.py:send_request_defer():385] handle sender defer: 7
+2022-06-04 19:10:41,311 INFO    SenderThread:30940 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-04 19:10:41,335 INFO    Thread-17 :30940 [upload_job.py:push():132] Uploaded file C:\Users\unnik\AppData\Local\Temp\tmptet4_o84wandb\87qi9upf-wandb-metadata.json
+2022-06-04 19:10:41,430 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:10:41,430 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:10:41,531 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:10:41,531 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:10:41,633 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:10:41,633 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:10:41,734 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:10:41,734 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:10:41,844 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:10:41,844 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:10:41,951 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:10:41,951 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:10:42,051 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:10:42,051 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:10:42,166 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:10:42,166 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:10:42,234 INFO    Thread-20 :30940 [upload_job.py:push():132] Uploaded file E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\output.log
+2022-06-04 19:10:42,239 INFO    Thread-21 :30940 [upload_job.py:push():132] Uploaded file E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\requirements.txt
+2022-06-04 19:10:42,239 INFO    Thread-22 :30940 [upload_job.py:push():132] Uploaded file E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\wandb-summary.json
+2022-06-04 19:10:42,259 INFO    Thread-18 :30940 [upload_job.py:push():132] Uploaded file E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\conda-environment.yaml
+2022-06-04 19:10:42,268 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:10:42,268 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:10:42,270 INFO    Thread-19 :30940 [upload_job.py:push():132] Uploaded file E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\files\config.yaml
+2022-06-04 19:10:42,383 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:10:42,383 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:10:42,480 INFO    Thread-10 :30940 [sender.py:transition_state():389] send defer: 8
+2022-06-04 19:10:42,480 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:10:42,480 INFO    HandlerThread:30940 [handler.py:handle_request_defer():164] handle defer: 8
+2022-06-04 19:10:42,480 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:10:42,480 INFO    SenderThread:30940 [sender.py:send_request_defer():385] handle sender defer: 8
+2022-06-04 19:10:42,484 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:10:42,499 WARNING MainThread:30940 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2022-06-04 19:10:43,283 INFO    SenderThread:30940 [sender.py:transition_state():389] send defer: 9
+2022-06-04 19:10:43,283 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:10:43,284 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:10:43,284 INFO    HandlerThread:30940 [handler.py:handle_request_defer():164] handle defer: 9
+2022-06-04 19:10:43,284 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:10:43,284 INFO    SenderThread:30940 [sender.py:send_request_defer():385] handle sender defer: 9
+2022-06-04 19:10:43,284 INFO    SenderThread:30940 [sender.py:transition_state():389] send defer: 10
+2022-06-04 19:10:43,285 DEBUG   SenderThread:30940 [sender.py:send():232] send: final
+2022-06-04 19:10:43,286 DEBUG   SenderThread:30940 [sender.py:send():232] send: footer
+2022-06-04 19:10:43,286 DEBUG   HandlerThread:30940 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:10:43,286 INFO    HandlerThread:30940 [handler.py:handle_request_defer():164] handle defer: 10
+2022-06-04 19:10:43,286 DEBUG   SenderThread:30940 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:10:43,286 INFO    SenderThread:30940 [sender.py:send_request_defer():385] handle sender defer: 10
+2022-06-04 19:10:47,540 WARNING MainThread:30940 [internal.py:is_dead():387] Internal process exiting, parent pid 31300 disappeared
+2022-06-04 19:10:47,540 ERROR   MainThread:30940 [internal.py:wandb_internal():149] Internal process shutdown.
+2022-06-04 19:10:48,348 INFO    SenderThread:30940 [sender.py:finish():1110] shutting down sender
+2022-06-04 19:10:48,349 INFO    SenderThread:30940 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-04 19:10:48,349 INFO    SenderThread:30940 [file_pusher.py:join():150] waiting for file pusher
+2022-06-04 19:10:48,348 INFO    WriterThread:30940 [datastore.py:close():279] close: E:\Academics\DDP\Code\Defocused DoF\droplet-parameter-estimation\Combined\wandb\run-20220604_191019-7ug4nn8n\run-7ug4nn8n.wandb
+2022-06-04 19:10:48,348 INFO    HandlerThread:30940 [handler.py:finish():806] shutting down handler
+2022-06-04 19:10:48,351 INFO    MainThread:30940 [internal.py:handle_exit():80] Internal process exited
