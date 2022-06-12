@@ -1,6 +1,6 @@
 defocus/50_100_150/data/*.png
-defocus/100/data/crop/*.png
-defocus/100/data/m_crop/*.png
+defocus/100/data/crop/
+defocus/100/data/m_crop/
 defocus/no_200/data/*.png
 defocus/no_200/OtherData/Dataset_200/*.png
 defocus/no_100/data_100/*.png
