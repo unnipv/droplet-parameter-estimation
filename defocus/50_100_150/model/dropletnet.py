@@ -36,7 +36,7 @@ class DropletNet(nn.Module):
             ConvBlock(8, 8, 3),
             nn.MaxPool2d(5, 3),
             nn.Flatten(),
-            Linear(2888, 128),
+            Linear(1352, 128),
             Linear(128, 16),
             nn.Linear(16, 2)
         )

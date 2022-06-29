@@ -1,4 +1,4 @@
-from dataset.droplets import DropletDataset
+from dataset.dropletsMP import DropletDataset
 from torch.utils.data import DataLoader
 from model.Unninet import UnniNet
 from model.Soorkinet import SoorkiNet
